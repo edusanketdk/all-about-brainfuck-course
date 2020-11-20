@@ -1,0 +1,18 @@
+title: All About Brainfuck
+description: >-
+  Learn the fundamentals of the brain-teasing extreme minimalistic language.
+  Then let's print "THE LANGUAGE OF GODS" in the language of gods! 
+template:
+  repo: all-about-brainfuck-template
+  name: all-about-brainfuck
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
